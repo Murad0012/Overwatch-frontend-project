@@ -1,8 +1,8 @@
 /* Header */
 
 header {
-    width: 95%;
-    height: 75px;
+    width: 98%;
+    height: 72px;
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
@@ -11,12 +11,14 @@ header {
     top: 2%;
     left: 50%;
     transform: translatex(-50%);
+    backdrop-filter: blur(20px);
+    z-index: 1;
     background-color: rgba(229, 235, 244, 0.8);
 }
 
 /* Dropdown arrows */
 
-.dropdown-arrow {
+.header-dropdown-arrow {
     height: 15px;
     width: 15px;
     margin-left: 4px;
@@ -25,7 +27,7 @@ header {
 
 /* Header Left */
 
-#header-left {
+.header-left {
     height: 100%;
     display: flex;
     align-items: center;
@@ -34,19 +36,18 @@ header {
 /* Blizzard Dropdown Part */
 
 #blizzard-dropdown {
-    width: 130px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 0 20px 0 32px;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 #blizzard-icon {
-    height: 70px;
-    width: 90px;
+    height: 56px;
+    width: 80px;
     color: rgb(0, 174, 255);
     transition: 0.2s;
 }
@@ -71,8 +72,8 @@ header {
 
 #main-menu ul li {
     height: 48px;
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     border-radius: 8px;
@@ -81,7 +82,7 @@ header {
     transition: 0.2s;
 }
 
-ul li:nth-child(1) {
+ul li:first-child {
     margin-left: 5px;
 }
 
@@ -89,7 +90,7 @@ li:hover {
     background-color: rgb(193, 194, 204);
 }
 
-#badge {
+#new-badge {
     font-size: 12px;
     padding: 0 4px 0 4px;
     border-radius: 4px;
@@ -171,29 +172,17 @@ li:hover {
     font-weight: 600;
 }
 
-#account-button svg:nth-child(1) {
+#account-button svg:first-of-type {
     width: 24px;
     height: 24px;
     margin-right: 10px;
     color: rgba(0, 0, 0, 0.5);
 }
 
-#account-button svg:nth-child(2) {
+#account-button svg:last-child {
     margin-right: 0;
 }
 
-/* Play Now Button */
-
-#play-now-button {
-    width: 104px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(230, 93, 15);
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    color: white;
-    font-size: 16px;
+.header-play-btn:hover{
+    opacity: 0.8;
 }
