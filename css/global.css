@@ -11,11 +11,9 @@ body{
     background-color: black;
 }
 
-/* Play Now Button */
+/* Buttons */
 
-.play-now-button {
-    width: 104px;
-    height: 48px;
+.btn-primary {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +22,15 @@ body{
     font-weight: 600;
     font-size: 16px;
     color: white;
+    cursor: pointer;
     background-color: rgb(230, 93, 15);
     transition: 0.3s;
+}
+
+.btn-primary-scale:hover{
+    transform: scale(1.05);
+}
+
+.btn-primary-fade:hover{
+    opacity: 0.8;
 }

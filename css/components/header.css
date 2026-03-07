@@ -74,6 +74,7 @@ header {
     height: 48px;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
     display: flex;
     align-items: center;
     border-radius: 8px;
@@ -87,7 +88,7 @@ ul li:first-child {
 }
 
 li:hover {
-    background-color: rgb(193, 194, 204);
+    background-color: rgb(180, 181, 190);
 }
 
 #new-badge {
@@ -148,7 +149,7 @@ li:hover {
 }
 
 #search-button:hover {
-    background-color: rgb(193, 194, 204);
+    background-color: rgb(180, 181, 190);
 }
 
 /* Account Button Part */
@@ -164,7 +165,7 @@ li:hover {
 }
 
 #account-button:hover {
-    background-color: rgb(193, 194, 204);
+    background-color: rgb(180, 181, 190);
 }
 
 #account-button span {
@@ -183,6 +184,7 @@ li:hover {
     margin-right: 0;
 }
 
-.header-play-btn:hover{
-    opacity: 0.8;
+.header-play-btn{
+    width: 104px;
+    height: 48px;
 }
