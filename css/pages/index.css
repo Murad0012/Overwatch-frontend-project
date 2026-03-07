@@ -1,6 +1,6 @@
 /* Hero Section */
 
-#hero {
+.hero {
     width: 100%;
     height: 800px;
     display: flex;
@@ -51,7 +51,7 @@
     border-radius: 2px;
 }
 
-.hero-play-btn:hover{
+.hero-play-btn:hover {
     transform: scale(1.05);
 }
 
@@ -63,13 +63,13 @@
     margin-bottom: 30px;
 }
 
-.hero-bottom svg{
+.hero-bottom svg {
     height: 32px;
     color: rgba(255, 255, 255, 0.8);
-    transition: 0.5s;   
+    transition: 0.5s;
 }
 
-.hero-bottom svg:hover{    
+.hero-bottom svg:hover {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -83,12 +83,12 @@
     left: 50%;
     object-fit: cover;
     transform: translate(-50%, -50%);
-    z-index: -1;    
+    z-index: -1;
 }
 
 /* Video button */
 
-#bck-video-pause-btn{
+#bck-video-pause-btn {
     height: 45px;
     width: 45px;
     border: none;
@@ -103,16 +103,88 @@
     transition: 0.2s;
 }
 
-#bck-video-pause-btn:hover{
+#bck-video-pause-btn:hover {
     background-color: rgba(93, 113, 152, 0.7);
 }
 
-#bck-video-pause-btn svg{
+#bck-video-pause-btn svg {
     width: 20px;
     height: 20px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-#bck-video-pause-btn:hover svg{
+#bck-video-pause-btn:hover svg {
     color: rgba(255, 255, 255, 0.8);
+}
+
+/* Overview Section */
+
+.overview {
+    width: 100%;
+    height: 614px;
+    display: flex;
+    justify-content: center;
+    background-image: url("/assets/images/2600_Silver_Background.jpg");
+}
+
+/* Overview Container */
+
+.overview-container {
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Overview Left Heading */
+
+.overview-heading {
+    line-height: 66px;
+    width: 570px;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: rgb(29, 37, 58);
+}
+
+/* Overview Left Description */
+
+.overview-description {
+    width: 500px;
+    height: 140px;
+    line-height: 28px;
+    color: rgba(29, 37, 58, 0.9);
+}
+
+/* Overview Right */
+
+.overview-right {
+    position: relative;
+}
+
+/* Overview Right Img */
+
+#overview-showcase-img {
+    width: 805px;
+    height: 100%;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#overview-showcase-img:hover {
+    filter: brightness(1.1);
+}
+
+/* Play Button */
+
+#video-play-button {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
