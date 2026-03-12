@@ -126,10 +126,6 @@
 /* Overview Container */
 
 .overview-container {
-    max-width: 1400px;
-    height: 100%;
-    display: flex;
-    align-items: center;
     gap: 40px;
 }
 
@@ -194,10 +190,6 @@
 }
 
 .banner-container {
-    max-width: 1400px;
-    height: 100%;
-    display: flex;
-    align-items: center;
     gap: 56px;
 }
 
@@ -257,10 +249,7 @@
 }
 
 .news-container {
-    max-width: 1400px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .news-heading {
@@ -363,6 +352,8 @@
 .features-heroes {
     width: 100%;
     height: 1515px;
+    display: flex;
+    flex-direction: column;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -455,7 +446,108 @@
 /* Divider */
 
 .divider {
-    width: 1600px;
-    margin-left: 90px;
-    margin-right: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divider-img{
+    width: 85%;
+}
+
+/* Heroes Part */
+
+.heroes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex:1;
+}
+
+.heroes-container{
+    align-items: normal;
+    height: 584px;
+    gap: 56px;
+}
+
+/* Heroes Left */
+
+.heroes-left{
+    width: 805px;
+}
+
+.heroes-left img{
+    width: 750px;
+    height: 1100px;
+    object-fit: cover ;
+    position: absolute;
+}
+
+/* Heroes Right */
+
+.heroes-heading{
+    font-size: 60px;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.roles{
+    height: 123px;
+    display: flex;
+    gap: 32px;
+}
+
+.role{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    filter: brightness(0.7);
+    transition: 0.1s;
+}
+
+.role:hover{
+    filter: brightness(1);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.selected-role{
+    filter: brightness(1);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.role img{
+    width: 37px;
+    height: 37px;
+}
+
+.heroes-role{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.heroes-role-description{
+    width: 550px;
+    font-size: 18px;
+    margin-top: 16px;
+    color: white;
+}
+
+/* See All Button */
+
+.see-all-btn{
+    width: 214px;
+    height: 56px;
+    font-size: 20px;
+    margin-top: 40px;
+    color: black;
+    background-color: white;
 }
