@@ -42,37 +42,3 @@ body {
     display: flex;
     align-items: center;
 }
-
-/* Social Section */
-
-.social {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: radial-gradient(50% 4798% at 50% 50.12%, rgb(53, 62, 98) 48%, rgb(36, 42, 66) 100%);
-}
-
-.social-container{
-    flex-direction: column;
-    gap: 24px;
-}
-
-.social-heading{
-    text-transform: uppercase;
-    color: white;
-    font-size: 32px;
-}
-
-.social-media-links{
-    display: flex;
-    gap: 24px;
-}
-
-.social-media-links svg{
-    width: 48px;
-    height: 48px;
-    color:rgba(255, 255, 255, 0.7);
-}

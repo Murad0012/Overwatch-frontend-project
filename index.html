@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="css/pages/index.css">
     <link rel="stylesheet" href="/css/components/header.css">
+    <link rel="stylesheet" href="/css/components/social.css">
+    <link rel="stylesheet" href="/css/components/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,7 +56,7 @@
                 </svg>
             </div>
             <nav id="main-menu">
-                <ul>
+                <ul class="main-menu-contents">
                     <li>
                         <span id="new-badge">NEW</span>
                         Game Info
@@ -200,8 +202,8 @@
                 <div class="overview-right">
                     <img id="overview-showcase-img" src="assets/images/xboxshowcase.webp" alt="">
                     <img id="video-play-button" src="assets/images/play_button.png" alt="">
-                    <iframe hidden width="805" height="452"
-                        src="https://www.youtube.com/embed/B7QTX7xKwqs?si=_3dcrhz75fgHY8vD" title="YouTube video player"
+                    <iframe hidden  width="805" height="452" allow="autoplay"
+                        src="https://www.youtube.com/embed/B7QTX7xKwqs?si=_3dcrhz75fgHY8vD?autoplay=1&mute=1" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -413,7 +415,91 @@
         </div>
     </section>
     <footer>
-
+        <div class="footer-container">
+            <div class="footer-top">
+                <ul class="footer-top-links">
+                    <li>Careers</li>
+                    <li>About</li>
+                    <li>Support</li>
+                    <li>Contact Us</li>
+                    <li>Press</li>
+                    <li>API</li>
+                </ul>
+                <button id="lang-btn">
+                    <svg class="lang-global-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H2M12 22C6.47715 22 2 17.5228 2 12M12 22C14.5013 19.2616 15.9228 15.708 16 12C15.9228 8.29203 14.5013 4.73835 12 2M12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2M2 12C2 6.47715 6.47715 2 12 2"
+                            stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    English (US)
+                    <svg class="lang-arrow-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" part="icon" aria-hidden="true">
+                        <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="footer-divider">
+                <hr>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-middler-left">
+                    <img src="/assets/images/Screenshot_2026-03-13_at_10.56.52-removebg-preview.png" alt="">
+                    <div class="footer-info">
+                        <p class="trademark">©2026 Blizzard Entertainment, Inc. <br>
+                            All <a href=""><b>trademarks</b></a> referenced herein are the properties of their respective owners.</p>
+                        <ul class="footer-middle-links">
+                            <li>Privacy</li>
+                            <li>Legal</li>
+                            <li>Terms</li>
+                            <li>Cookie Policy</li>
+                            <li>Cookie Settings</li>
+                        </ul>
+                    </div>    
+                </div>
+                <div class="social-icons">
+                    <div class="social-icon">
+                        <svg color="white" witdh="24" height="24" viewBox="0 0 48 48" fill="currentColor"
+                            stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"
+                            part="icon">
+                            <title id="twitter_title">X</title>
+                            <path stroke="none"
+                                d="M27.032 21.551 38.936 8h-2.82l-10.34 11.764L17.521 8H8l12.484 17.791L8 40h2.82l10.914-12.426L30.452 40h9.521M11.838 10.083h4.332L36.114 38.02h-4.333">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="social-icon">
+                        <svg color="white" witdh="24" height="24"  viewBox="0 0 48 48" fill="currentColor" stroke="currentColor" stroke-width="0"
+                            stroke-linecap="round" stroke-linejoin="round" part="icon">
+                            <title id="facebook_title">Facebook</title>
+                            <path stroke="none"
+                                d="M42 24.11C42 14.108 33.941 6 24 6S6 14.108 6 24.11C6 33.15 12.582 40.641 21.188 42V29.345h-4.57V24.11h4.57v-3.99c0-4.539 2.687-7.046 6.798-7.046 1.97 0 4.03.354 4.03.354v4.457h-2.27c-2.236 0-2.933 1.396-2.933 2.828v3.397h4.992l-.798 5.235h-4.195V42C35.419 40.641 42 33.15 42 24.11">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="social-icon">
+                        <svg color="white" witdh="24" height="24"  viewBox="0 0 48 48" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" part="icon"><title id="reddit_title">Reddit</title><path stroke="none" d="M44 22.172a4.395 4.395 0 0 0-4.394-4.393c-1.195 0-2.25.456-3.023 1.23-2.987-2.144-7.135-3.55-11.704-3.726l2.003-9.385 6.503 1.37a3.13 3.13 0 0 0 3.128 2.989 3.135 3.135 0 0 0 3.129-3.129A3.135 3.135 0 0 0 36.513 4a3.04 3.04 0 0 0-2.777 1.757l-7.275-1.546a.88.88 0 0 0-.598.105c-.176.106-.281.282-.352.492l-2.214 10.475c-4.675.14-8.858 1.511-11.88 3.726-.774-.738-1.863-1.23-3.023-1.23A4.395 4.395 0 0 0 4 22.172c0 1.793 1.054 3.304 2.601 4.007-.07.422-.105.879-.105 1.336 0 6.749 7.838 12.197 17.54 12.197 9.7 0 17.539-5.448 17.539-12.197 0-.457-.036-.879-.106-1.3C42.91 25.51 44 23.964 44 22.171M13.947 25.3a3.135 3.135 0 0 1 3.129-3.128 3.135 3.135 0 0 1 3.128 3.128 3.135 3.135 0 0 1-3.128 3.129 3.135 3.135 0 0 1-3.129-3.128m17.47 8.26c-2.145 2.145-6.222 2.285-7.417 2.285s-5.308-.175-7.416-2.284a.827.827 0 0 1 0-1.16.83.83 0 0 1 1.16 0c1.335 1.335 4.217 1.827 6.291 1.827s4.921-.492 6.292-1.827a.83.83 0 0 1 1.16 0c.246.351.246.843-.07 1.16m-.563-5.131a3.135 3.135 0 0 1-3.128-3.128 3.135 3.135 0 0 1 3.128-3.129 3.135 3.135 0 0 1 3.128 3.128 3.135 3.135 0 0 1-3.128 3.129"></path></svg>
+                    </div>
+                    <div class="social-icon">
+                        <svg color="white" witdh="24" height="24"  viewBox="0 0 48 48" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" part="icon"><title id="instagram_title">Instagram</title><path stroke="none" d="M24 6c-4.889 0-5.501.02-7.421.108-1.916.088-3.225.392-4.37.837A8.8 8.8 0 0 0 9.021 9.02a8.8 8.8 0 0 0-2.076 3.188c-.445 1.145-.75 2.454-.837 4.37C6.021 18.499 6 19.11 6 24s.02 5.502.108 7.421c.088 1.916.392 3.225.837 4.37a8.8 8.8 0 0 0 2.076 3.188c1 1 2.005 1.616 3.188 2.076 1.145.445 2.454.75 4.37.837 1.92.087 2.532.108 7.421.108s5.502-.02 7.421-.108c1.916-.088 3.225-.392 4.37-.837a8.8 8.8 0 0 0 3.188-2.076c1-1 1.616-2.005 2.076-3.188.445-1.145.75-2.454.837-4.37.087-1.92.108-2.532.108-7.421s-.02-5.501-.108-7.421c-.088-1.916-.392-3.225-.837-4.37a8.8 8.8 0 0 0-2.076-3.188 8.8 8.8 0 0 0-3.188-2.076c-1.145-.445-2.454-.75-4.37-.837C29.501 6.021 28.89 6 24 6m0 3.243c4.806 0 5.375.019 7.273.105 1.756.08 2.709.373 3.343.62.84.326 1.44.717 2.07 1.346s1.02 1.23 1.346 2.07c.247.634.54 1.588.62 3.343.086 1.898.105 2.467.105 7.273s-.019 5.375-.105 7.273c-.08 1.756-.373 2.709-.62 3.343a5.6 5.6 0 0 1-1.346 2.07c-.63.63-1.23 1.02-2.07 1.346-.634.247-1.587.54-3.343.62-1.897.086-2.466.105-7.273.105s-5.376-.019-7.273-.105c-1.755-.08-2.709-.373-3.343-.62a5.6 5.6 0 0 1-2.07-1.346 5.6 5.6 0 0 1-1.346-2.07c-.247-.634-.54-1.587-.62-3.343-.086-1.898-.105-2.467-.105-7.273s.019-5.375.105-7.273c.08-1.755.373-2.709.62-3.343.326-.84.717-1.44 1.346-2.07s1.23-1.02 2.07-1.346c.634-.247 1.588-.54 3.343-.62 1.898-.086 2.467-.105 7.273-.105"></path><path stroke="none" d="M24 30a6 6 0 1 1 0-12 6 6 0 0 1 0 12m0-15.243a9.243 9.243 0 1 0 0 18.486 9.243 9.243 0 1 0 0-18.486m11.769-.365a2.16 2.16 0 1 1-4.32 0 2.16 2.16 0 0 1 4.32 0"></path></svg>
+                    </div>
+                    <div class="social-icon">
+                        <svg color="white" witdh="24" height="24"  viewBox="0 0 48 48" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" part="icon"><title id="youtube_title">YouTube</title><path stroke="none" d="M19.909 29.91V18.09L30.364 24zm23.255-15.538a5.01 5.01 0 0 0-3.536-3.536C36.508 10 24 10 24 10s-12.508 0-15.628.836a5.01 5.01 0 0 0-3.536 3.536C4 17.492 4 24 4 24s0 6.508.836 9.628a5.01 5.01 0 0 0 3.536 3.536C11.492 38 24 38 24 38s12.508 0 15.628-.836a5.01 5.01 0 0 0 3.536-3.536C44 30.508 44 24 44 24s0-6.508-.836-9.628"></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <img width="65" height="80" src="/assets/images/12.213ng.png" alt="">
+                <div class="footer-bottom-right">
+                    <div>
+                        <img src="assets/images/bad-language-black-EN.png" alt="">
+                        <img src="assets/images/violence-black-EN.png" alt="">
+                        <img src="/assets/images/in-game-purchase-black-EN.png" alt="">
+                    </div>
+                    <hr>
+                    <p class="footer-bottom-description">In-game Purchase (Includes Random Items)</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
