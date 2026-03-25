@@ -11,7 +11,7 @@
     background-color: rgba(9, 7, 78, 0.4);
 }
 
-/* Hero Section Middle */
+/* Hero Middle */
 
 .hero-middle {
     display: flex;
@@ -44,6 +44,8 @@
     color: white;
 }
 
+/* Hero Play Button */
+
 .hero-play-btn {
     width: 165px;
     height: 56px;
@@ -51,7 +53,7 @@
     border-radius: 2px;
 }
 
-/* Hero Section Bottom */
+/* Hero Bottom */
 
 .hero-bottom {
     display: flex;
@@ -69,7 +71,7 @@
     color: rgba(255, 255, 255, 1);
 }
 
-/* Hero Section Background Video */
+/* Hero Background Video */
 
 #hero-bck-video {
     width: 100%;
@@ -120,6 +122,9 @@
     height: 614px;
     display: flex;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url("/assets/images/2600_Silver_Background.jpg");
 }
 
@@ -289,10 +294,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-bottom: none;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     transition: 0.2s;
-    border-bottom: none;
 }
 
 /* Item Bottom */
@@ -308,7 +313,6 @@
     justify-content: space-between;
     padding: 20px;
     background: radial-gradient(124.81% 124.81% at 50% -.29%, #242a42 43.75%, #121524 100%);
-    ;
 }
 
 .news-item-heading {
@@ -347,8 +351,6 @@
 
 /* Features & Heroes Section */
 
-/* Features Part */
-
 .features-heroes {
     width: 100%;
     height: 1515px;
@@ -359,6 +361,8 @@
     background-repeat: no-repeat;
     background-image: url("/assets/images/features_hero_bck.webp");
 }
+
+/* Features Part */
 
 .features {
     width: 100%;
